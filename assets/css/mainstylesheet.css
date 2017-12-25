@@ -26,7 +26,7 @@
 	h1{
 		margin-top: 10px;
 		color: #000000;
-		font-family: 'Open Sans';
+		font-family: 'Open Sans', sans-serif;
 		font-weight: 100;
 		font-size: 80px;
 		text-transform: uppercase;
@@ -66,13 +66,25 @@
 	}
 
 	h2{
-		font-size: 14pt;
+		font-size: 12pt;
 		text-align: center;
 		padding: 0.2em;
 	}
 
+	button:focus {
+		outline:0;
+	}
+
+
+	#myVideo {
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    min-width: 100%; 
+	    min-height: 100%;
+	}
 	#profile-picture{
-		padding-top: 150px;
+		padding-top: 130px;
 	}
 
 	#profile-picture img{
@@ -88,3 +100,155 @@
 		border-radius: 50%;
 		box-shadow: -7px 12px 15px rgba(0, 0, 0, 0.5); 
 	}
+
+	.button{
+		background-color: #32CD32;
+		color: white;
+		display: block;
+		padding: 14px 18px;
+		border: none;
+		border-radius: 8px;	
+		margin: 0 auto;
+		cursor: pointer;	
+	}
+
+	.button span{
+		font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+		font-size: 14pt;
+		font-weight: 900;
+	}
+
+	.button:hover{
+		background-color: yellow;
+	}
+
+	#resume{
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	#social{
+		text-align: center;
+	}
+
+	#social img{
+		height: 55px;
+		width: 55px;
+		padding: 4px 10px 0px 10px; 
+	}
+
+	#social img:hover{
+		filter:opacity(75%);
+	}
+
+
+
+
+	@-webkit-keyframes bob
+	{
+	    15%
+	    {
+	        -webkit-transform: translateY(3px);
+	        transform: translateY(3px);
+	    }
+	    30%
+	    {
+	        -webkit-transform: translateY(-3px);
+	       transform: translateY(-3px);
+	    } 
+	    50%
+	    {
+	        -webkit-transform: translateY(3px);
+	        transform: translateY(3px);
+	    }
+	    65%
+	    {
+	        -webkit-transform: translateY(-3px);
+	        transform: translateY(-3px);
+	    }
+	    80%
+	    {
+	        -webkit-transform: translateY(2px);
+	        transform: translateY(2px);
+	    }
+	    100%
+	    {
+	        -webkit-transform: translateY(0);
+	        transform: translateY(0);
+	    }
+	}
+	@keyframes bob
+	{
+	    15%
+	    {
+	        -webkit-transform: translateY(3px);
+	        transform: translateY(3px);
+	    }
+	    30%
+	    {
+	        -webkit-transform: translateY(-3px);
+	       transform: translateY(-3px);
+	    } 
+	    50%
+	    {
+	        -webkit-transform: translateY(3px);
+	        transform: translateY(3px);
+	    }
+	    65%
+	    {
+	        -webkit-transform: translateY(-3px);
+	        transform: translateY(-3px);
+	    }
+	    80%
+	    {
+	        -webkit-transform: translateY(2px);
+	        transform: translateY(2px);
+	    }
+	    100%
+	    {
+	        -webkit-transform: translateY(0);
+	        transform: translateY(0);
+	    }
+	}
+
+	.arrow{
+		-webkit-animation: bob 1s ease;
+        animation: bob 1s ease;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+	}
+
+.callout {
+    position: relative;
+    overflow: hidden;
+}
+.video-bg,
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+.video-overlay {
+    background: rgba(0,0,0,0.5);
+    pointer-events: none; /* Allows right clicking on the video to pause etc */
+}
+.video-bg video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.callout-content {
+    position: relative;
+    text-align: center;
+    margin: 50px 0; /* This adds some space around the video */
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
