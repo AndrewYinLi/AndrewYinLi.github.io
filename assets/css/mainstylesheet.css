@@ -2,7 +2,8 @@
  * Developed from scratch by Andrew Yin Li.
  */
 	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+	@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
 	@font-face {
 	    font-family: 'Quicksand';
 	    src: url('../fonts/Quicksand-Regular.eot');
@@ -18,41 +19,34 @@
 
 	h2, h3, h4, h5, h6{
 		
-		font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+		font-family: 'Roboto', Arial, Helvetica, sans-serif;
 		
 	}
 
 	
 	h1{
 		margin-top: 10px;
+		margin-bottom: 30px;
 		color: #FFFFFF;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Fjalla One', sans-serif;
 		font-weight: 500;
 		font-size: 80px;
 		text-transform: uppercase;
 		letter-spacing: .1em;
 		text-align: center;
-		text-shadow: -1px 1px 0px #99ccff, -2px 2px 0px #99ccff, -3px 3px 0px #99ccff, -4px 4px 10px #6699ff;
+		text-shadow:0px 0px 0 rgb(42,142,167),-1px 1px 0 rgb(37,137,162),-2px 2px 0 rgb(33,133,158),-3px 3px 0 rgb(29,129,154),-4px 4px 0 rgb(24,124,149),-5px 5px 0 rgb(20,120,145),-6px 6px 0 rgb(16,116,141),-7px 7px 0 rgb(11,111,136),-8px 8px 0 rgb(7,107,132),-9px 9px 0 rgb(3,103,128),-10px 10px 0 rgb(-2,98,123),-11px 11px 0 rgb(-6,94,119),-12px 12px 0 rgb(-11,89,114),-13px 13px 0 rgb(-15,85,110),-14px 14px 0 rgb(-19,81,106),-15px 15px 0 rgb(-24,76,101),-16px 16px 0 rgb(-28,72,97),-17px 17px 0 rgb(-32,68,93),-18px 18px 0 rgb(-37,63,88),-19px 19px 0 rgb(-41,59,84), -20px 20px 0 rgb(-45,55,80);
 	}
 
 	h2{
 		font-size: 12pt;
 		text-align: center;
-		padding: 0.2em;
+	    color: #FFFFFF;
 	}
 
 	button:focus {
 		outline:0;
 	}
 
-
-	#myVideo {
-	    position: fixed;
-	    right: 0;
-	    bottom: 0;
-	    min-width: 100%; 
-	    min-height: 100%;
-	}
 	#profile-picture{
 		padding-top: 130px;
 	}
@@ -72,24 +66,24 @@
 	}
 
 	.button{
-		background-color: #32CD32;
+		background-color: #0098C3;
 		color: white;
 		display: block;
 		padding: 14px 18px;
 		border: none;
 		border-radius: 8px;	
-		margin: 0 auto;
+		margin: 8px auto;
 		cursor: pointer;	
 	}
 
 	.button span{
-		font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-		font-size: 14pt;
-		font-weight: 900;
+		font-family: 'Roboto', Arial, Helvetica, sans-serif;;
+		font-size: 12pt;
+		font-weight: 600;
 	}
 
 	.button:hover{
-		background-color: yellow;
+		background-color: #00799c;
 	}
 
 	#resume{
@@ -99,20 +93,18 @@
 
 	#social{
 		text-align: center;
+		margin-bottom: 24px;
 	}
 
-	#social img{
+	#social i{
 		height: 55px;
 		width: 55px;
-		padding: 4px 10px 0px 10px; 
+		padding: 4px 20px 0px 20px; 
 	}
 
-	#social img:hover{
+	#social i:hover{
 		filter:opacity(75%);
 	}
-
-
-
 
 	@-webkit-keyframes bob
 	{
@@ -196,6 +188,20 @@
 		min-height: 100%;
 		width: auto; 
 		height: auto; 
-		z-index: -100;
 		background-size: cover; 
+		pointer-events: none;
+		z-index: -100;
+	}
+
+	#bg-overlay{
+		position: absolute; 
+		left: 15%; 
+		bottom: 30%;
+		top: 50%; 
+		width: 70%; 
+		height: 10%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -99;
+		border-radius: 25px;
+		margin: auto;
 	}
