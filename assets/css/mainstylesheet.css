@@ -34,7 +34,7 @@
 		text-transform: uppercase;
 		letter-spacing: .1em;
 		text-align: center;
-		text-shadow:0px 0px 0 rgb(42,142,167),-1px 1px 0 rgb(37,137,162),-2px 2px 0 rgb(33,133,158),-3px 3px 0 rgb(29,129,154),-4px 4px 0 rgb(24,124,149),-5px 5px 0 rgb(20,120,145),-6px 6px 0 rgb(16,116,141),-7px 7px 0 rgb(11,111,136),-8px 8px 0 rgb(7,107,132),-9px 9px 0 rgb(3,103,128),-10px 10px 0 rgb(-2,98,123),-11px 11px 0 rgb(-6,94,119),-12px 12px 0 rgb(-11,89,114),-13px 13px 0 rgb(-15,85,110),-14px 14px 0 rgb(-19,81,106),-15px 15px 0 rgb(-24,76,101),-16px 16px 0 rgb(-28,72,97),-17px 17px 0 rgb(-32,68,93),-18px 18px 0 rgb(-37,63,88),-19px 19px 0 rgb(-41,59,84), -20px 20px 0 rgb(-45,55,80);
+		text-shadow:0px 0px 0 rgb(42,142,167),-1px 1px 0 rgb(37,137,162),-2px 2px 0 rgb(33,133,158),-3px 3px 0 rgb(29,129,154),-4px 4px 0 rgb(24,124,149),-5px 5px 0 rgb(20,120,145),-6px 6px 0 rgb(16,116,141),-7px 7px 0 rgb(11,111,136),-8px 8px 0 rgb(7,107,132),-9px 9px 0 rgb(3,103,128),-10px 10px 0 rgb(-2,98,123),-11px 11px 0 rgb(-6,94,119),-12px 12px 0 rgb(-11,89,114),-13px 13px 0 rgb(-15,85,110),-14px 14px 0 rgb(-19,81,106),-15px 15px 0 rgb(-24,76,101),-16px 16px 0 rgb(-28,72,97),-17px 17px 0 rgb(-32,68,93),-18px 18px 0 rgb(-37,63,88),-19px 19px 0 rgb(-41,59,84), -20px 20px 0 rgb(-45,55,80), -21px 21px 10px #000000;
 	}
 
 	h2{
@@ -99,11 +99,11 @@
 	#social i{
 		height: 55px;
 		width: 55px;
-		padding: 4px 20px 0px 20px; 
+		padding: 4px 20px 0px 10px; 
 	}
 
 	#social i:hover{
-		filter:opacity(75%);
+		filter:opacity(60%);
 	}
 
 	@-webkit-keyframes bob
@@ -194,13 +194,11 @@
 	}
 
 	#bg-overlay{
-		position: absolute; 
-		left: 15%; 
-		bottom: 30%;
-		top: 50%; 
+		position: relative; 
+ 
 		width: 70%; 
-		height: 10%;
-		background-color: rgba(0, 0, 0, 0.5);
+		padding: 5px 10px;
+		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -99;
 		border-radius: 25px;
 		margin: auto;
