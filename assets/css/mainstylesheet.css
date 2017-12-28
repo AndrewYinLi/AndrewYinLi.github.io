@@ -1,13 +1,18 @@
 /* 
  * Developed from scratch by Andrew Yin Li.
  */
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 	@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-	@import url('https://fonts.googleapis.com/css?family=Roboto');
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 
 	html, body {
 		margin:0;
 		padding:0;
+		overflow-x: hidden;
+	}
+
+	a{
+		color: #e6ffff
+		
 	}
 
 	h1, h3{
@@ -16,11 +21,14 @@
 
 	h2, h4, h5, h6{
 		
-		font-family: 'Roboto', Arial, Helvetica, sans-serif;
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 		
 	}
 
-	
+	h3, h4, h5{
+		color: #e6ffff
+	}
+
 	h1{
 		margin-top: 10px;
 		margin-bottom: 30px;
@@ -43,14 +51,61 @@
 
 	h3{
 		font-size: 22pt;
+		text-transform: uppercase;
+	}
+
+	h4{
+		font-size: 14pt;
+	}
+
+	h5{
+		font-size: 14pt;
 	}
 
 	button:focus {
 		outline:0;
 	}
 
+
+	#bg-video{ 
+		position: fixed; 
+		left: 0;
+		top: 0;
+		min-width: 100%; 
+		min-height: 100%;
+		width: auto; 
+		height: auto; 
+		background-size: cover; 
+		pointer-events: none;
+		z-index: -100;
+	}
+
+	#bg-overlay{ 
+		position: fixed; 
+		left: 0;
+		top: 0;
+		min-width: 100%; 
+		min-height: 100%;
+		width: auto; 
+		height: auto; 
+		background-size: cover; 
+		background-color: rgba(38, 63, 89, 0.7);
+		z-index: -99;
+	}
+	
+
+	#introduction-overlay{
+		position: relative; 
+		width: 60%; 
+		padding: 5px 10px;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -90;
+		border-radius: 25px;
+		margin: 0 auto;
+	}
+
 	#profile-picture{
-		padding-top: 130px;
+		padding-top: 100px;
 	}
 
 	#profile-picture img{
@@ -71,7 +126,7 @@
 		background-color: #0098C3;
 		color: white;
 		display: block;
-		padding: 14px 18px;
+		padding: 10px 12px;
 		border: none;
 		border-radius: 8px;	
 		margin: 8px auto;
@@ -79,7 +134,7 @@
 	}
 
 	.button span{
-		font-family: 'Roboto', Arial, Helvetica, sans-serif;;
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;;
 		font-size: 12pt;
 		font-weight: 600;
 	}
@@ -95,17 +150,21 @@
 
 	#social{
 		text-align: center;
-		margin-bottom: 24px;
+		margin-bottom: 12px;
 	}
 
-	#social i{
-		height: 55px;
-		width: 55px;
-		padding: 4px 20px 0px 10px; 
+	#social img{
+		height: 70px;
+		width: 70px;
+		padding: 4px 12px; 
 	}
 
-	#social i:hover{
+	#social img:hover{
 		filter:opacity(60%);
+	}
+
+	#email{
+		padding-top: 100px;
 	}
 
 	@-webkit-keyframes bob
@@ -182,52 +241,33 @@
         animation-iteration-count: infinite;
 	}	
 
-	#bg-video{ 
-		position: absolute; 
-		right: 0; 
-		bottom: 0;
-		min-width: 100%; 
-		min-height: 100%;
-		width: auto; 
-		height: auto; 
-		background-size: cover; 
-		pointer-events: none;
-		z-index: -100;
+	#about-top {
+		width: 0;
+		height: 0;
+		border-bottom: 10vh solid #4d79ff;
+		border-right: 100vw solid transparent;
+		overflow: hidden;
 	}
 
-	
-	#bg-overlay{ 
-		position: absolute; 
-		right: 0; 
-		bottom: 0;
-		min-width: 100%; 
-		min-height: 100%;
-		width: auto; 
-		height: auto; 
-		background-size: cover; 
-		background-color: rgba(38, 63, 89, 0.7);
-		z-index: -99;
-	}
-	
 
-	#introduction-overlay{
-		position: relative; 
-		width: 60%; 
-		padding: 5px 10px;
-		background-color: rgba(0, 0, 0, 0.7);
-		z-index: -90;
-		border-radius: 25px;
-		margin: 0 auto;
-	}
-	
 	#about{
 		background-size: cover;
-		background-color: #29547F;
+		background-color: #4d79ff;
 		overflow: auto;
+	}
+
+	#portfolio-top {
+		width: 0;
+		height: 0;
+		border-top: 10vh solid #4d79ff;
+		border-right: 100vw solid #3366ff;
+		overflow: hidden;
 	}
 
 	#portfolio{
 		background-size: cover;
-		background-color: #29547F;
+		background-color: #3366ff;
 		overflow: auto;
 	}
+
+	
