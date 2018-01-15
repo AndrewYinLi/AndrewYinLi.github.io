@@ -3,6 +3,7 @@
  */
 	@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+	@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
 
 	html, body {
 		margin:0;
@@ -11,22 +12,22 @@
 	}
 
 	a{
-		color: #e6ffff
-		
+		text-decoration: none;
 	}
 
 	h1, h3{
 		font-family: 'Fjalla One', sans-serif;
 	}
 
-	h2, h4, h5, h6{
+	h2, h4, h5{
 		
 		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 		
 	}
 
-	h3, h4, h5{
-		color: #e6ffff
+	h3, h4, h5, h6{
+		color: #e6ffff;
+		margin: auto 2.5%;
 	}
 
 	h1{
@@ -52,14 +53,45 @@
 	h3{
 		font-size: 22pt;
 		text-transform: uppercase;
+		
 	}
 
 	h4{
+		font-size: 16pt;
+	}
+
+	h4.project-button-text{
 		font-size: 14pt;
+		margin: auto;
+		padding: 0;
+	}
+
+	i{
+		vertical-align: middle;
 	}
 
 	h5{
 		font-size: 14pt;
+	}
+
+	h6{
+		font-family: 'Alegreya Sans SC', sans-serif;
+		font-size: 14pt;
+		font-weight: 100;
+	}
+
+	h6.caption{
+		margin: auto auto;
+	}
+
+	.anchor{
+		color: #000000;
+		display: inline;
+		text-decoration: underline dotted;
+	}
+
+	.anchor:hover{
+		font-style: italic;
 	}
 
 	button:focus {
@@ -109,7 +141,6 @@
 	}
 
 	#profile-picture img{
-		
 		display: block;
 		margin: 0 auto;
 		height: 175px;
@@ -249,11 +280,11 @@
 		overflow: hidden;
 	}
 
-
 	#about{
 		background-size: cover;
 		background-color: #4d79ff;
 		overflow: auto;
+		padding: 5vh 0;
 	}
 
 	#portfolio-top {
@@ -268,6 +299,48 @@
 		background-size: cover;
 		background-color: #3366ff;
 		overflow: auto;
+		padding: 5vh 0;
+	}
+
+	#portfolio-projects div{
+		margin: 0 auto;
+	}
+
+	.portfolio-project{
+		width: 90vw;
+		padding: 2vh 0;
+		background: #343D48;
+		overflow: hidden;
+	}
+
+	.slideshow{
+		padding: 0 2.5%;
+	}
+
+	.project-button{
+		background-color: #0098C3;
+		color: white;
+		padding: 8px 8px;
+		border-radius: 8px;	
+		border: 0;
+		cursor: pointer;
+		margin: 0 0.25vw 0 0;
+	}
+
+	.project-button:hover{
+		background-color: #00799c;
+	}
+
+	.project-button-link{
+		/*padding: 8px 8px;*/
+	}
+
+	.project-button-margins{
+		margin: 0 0.25vw;
+	}
+
+	.slide img{
+		border-radius: 2.5%;
 	}
 
 	
