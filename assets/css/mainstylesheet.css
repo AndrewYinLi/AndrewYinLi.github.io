@@ -275,6 +275,7 @@
         animation: bob 1s ease;
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
+        text-align: center;
 	}	
 
 	#about-top {

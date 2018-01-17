@@ -1,5 +1,5 @@
-var slideIndices = [1,1]; // 0 = oprestissimo, 1 = leapyfrog
-var slideClassNames = ["oprestissimo-slide", "leapyfrog-slide"];
+var slideIndices = [1,1,1]; // 0 = oprestissimo, 1 = rainier, 2 = leapyfrog
+var slideClassNames = ["oprestissimo-slide", "rainier-slide", "leapyfrog-slide"];
 var slideSizes = [false,false];
 
 var slideIndex;
@@ -30,8 +30,11 @@ function getKey(name){
 	if(!name.localeCompare("oprestissimo-slide")){
 		return 0;
 	}
-	else if(!name.localeCompare("leapyfrog-slide")){ // else is omitted because I will probably add more slides as I do more projects
+	else if(!name.localeCompare("rainier-slide")){ // else is omitted because I will probably add more slides as I do more projects
 		return 1;
+	}
+	else if(!name.localeCompare("leapyfrog-slide")){ // else is omitted because I will probably add more slides as I do more projects
+		return 2;
 	}
 }
 

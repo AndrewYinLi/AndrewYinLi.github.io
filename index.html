@@ -2,10 +2,19 @@
 
 <html lang="en">
 	<head>
-		<title>Andrew Yin Li</title>
+		<!-- Meta tags -->
 		<meta charset="utf-8" />
+		<meta name="description" content="Website portfolio for Andrew Yin Li (ali@oberlin.edu)." /> 
+		<meta name="keywords" content="Andrew Yin Li Oberlin Computer Science ali@oberlin.edu" />
+		<meta name="author" content="Andrew Yin Li" />
+
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/mainstylesheet.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Icon graphics -->
+
+		<title>Andrew Yin Li</title>
+	</head>
+	<body>
 		<div id="bg">
 			
 			<video muted loop autoplay id="bg-video">
@@ -16,8 +25,6 @@
 	   	 	</video>
 	   	 	<div id="bg-overlay"></div>
 		</div>
-	</head>
-	<body>
 		<div id="header">
 			<div id="profile-picture">
 				<img src="assets/images/me.jpg" alt="Picture of me!">
@@ -33,7 +40,7 @@
 				<a href="https://github.com/AndrewYinLi" title="GitHub"><img src="assets/images/github.png" alt="www.github.com/AndrewYinLi"></a>
 				<a href="https://www.linkedin.com/in/andrew-yin-li" title="LinkedIn"><img src="assets/images/linkedin.png" alt="www.linkedin.com/in/andrew-yin-li"></a>
 			</div><div class="arrow">
-				<center><i class="fa fa-angle-double-down" style="font-size:70px; color:#FFFFFF;"></i></center>
+				<i class="fa fa-angle-double-down" style="font-size:70px; color:#FFFFFF;"></i>
 			</div>
 		</div><div id="main">
 			<div id="about-top"></div>
@@ -78,12 +85,45 @@
 							<button class="project-button project-button-margins" onclick="changeSlide(1,'oprestissimo-slide')"><i class="fa fa-arrow-right fa-2x"></i></button>
 							<button class="project-button project-button-margins" onclick="toggleSize('oprestissimo-slide')"><i class="fa fa-arrows fa-2x"></i></button>
 							<button class="project-button project-button-link project-button-margins"><h4 class="project-button-text"><a href="#"><i class="fa fa-github-square fa-2x"></i>&nbsp;<s>Source Code</s> In-Progress</a></h4></button>
-							<script src="assets/js/slideshow.js"></script>
+						</div>
+					</div>
+					<br /><div class="portfolio-project">
+						<h4>Rainier Website template</h4>
+						<br /><h6>Date: December 2017 to January 2018 <br />Skills: HTML5, CSS3, and JavaScript <br />Employer: Independent Project</h6>
+						<br />
+						<h5>I coded this website from scratch with HTML5, CSS3, and JavaScript as I intended for it to be my portfolio website showcasing my work in computer science. After nearing completion, I realized that I was really proud of my work and wanted to share it other people! Hence, I cleaned up my code and have released it as a portfolio website template that I have dubbed "Rainier", after Mt. Rainier in my native Washington. The video background for this website is actually a timelapse of Mt. Rainier!</h5>
+						<br />
+						<div class="slideshow rainier-slideshow">
+							<div class="slide rainier-slide">
+							  <img src="assets/images/rainier1.png" width="60%" height="60%" alt="Initial load of the website template.">
+							  <div class="slide-caption">
+							    <h6 class="caption">Initial load of the website template.</h6>
+							  </div>
+							</div>
+
+							<div class="slide rainier-slide">
+							  <img src="assets/images/rainier2.png" width="60%" height="60%" alt="Part of the portfolio section.">
+							  <div class="slide-caption">
+							    <h6 class="caption">The portfolio section.</h6>
+							  </div>
+							</div>
+
+							<div class="slide rainier-slide">
+							  <img src="assets/images/rainier3.png" width="60%" height="60%" alt="Part of the portfolio section and footer.">
+							  <div class="slide-caption">
+							   	<h6 class="caption">Part of the portfolio section and footer.</h6>
+							  </div>
+							</div>
+							<br />
+							<button class="project-button" onclick="changeSlide(-1,'rainier-slide')"><i class="fa fa-arrow-left fa-2x"></i></button>
+							<button class="project-button project-button-margins" onclick="changeSlide(1,'rainier-slide')"><i class="fa fa-arrow-right fa-2x"></i></button>
+							<button class="project-button project-button-margins" onclick="toggleSize('rainier-slide')"><i class="fa fa-arrows fa-2x"></i></button>
+							<button class="project-button project-button-link project-button-margins"><h4 class="project-button-text"><a href="https://github.com/AndrewYinLi/rainier"><i class="fa fa-github-square fa-2x"></i>&nbsp;Source Code</a></h4></button>
 						</div>
 					</div>
 					<br /><div class="portfolio-project">
 						<h4>Mobile Game Developer - Leapy Frog</h4>
-						<br /><h6>Date: May 2015 to November 2015 <br />Skills: C# and Unity3D Game Engine <br />Employer: Independent</h6>
+						<br /><h6>Date: May 2015 to November 2015 <br />Skills: C# and Unity3D Game Engine <br />Employer: Independent Project</h6>
 						<br />
 						<h5>Self-learned C# and the Unity3D Game Engine through textbooks and YouTube videos. Independently developed and published a 2D Android game to the Google Play Store using my newfound knowledge on C# and Unity3D. As of 2018, the app has 200+ downloads on Google Play. <br /> The game is an infinite runner/platformer in which you play as a frog and dodge ducks while leaping to the next platform, attempting to land on as many succeeding platforms as possible.</h5>
 						<br />
@@ -91,14 +131,14 @@
 							<div class="slide leapyfrog-slide">
 							  <img src="https://lh3.googleusercontent.com/k6yJCrLt-_WGvh57zLcwOvpgEpacFJltXIZQPhs4VDsaBqq8ImHs3xhz1-5jfumHpBqM=h900-rw" width="60%" height="60%" alt="Homepage for Oprestissimo.">
 							  <div class="slide-caption">
-							    <h6 class="caption">Game menu.</h6>
+							    <h6 class="caption">Game menu for Leapy Frog.</h6>
 							  </div>
 							</div>
 
 							<div class="slide leapyfrog-slide">
 							  <img src="https://lh3.googleusercontent.com/mDWmL6dECB4socNrf0dH_G4OwFdldrPHUmtOwu47B8kcHSGfwHLB0N3efK27IcaUjys=h900-rw" width="60%" height="60%" alt="Example of course list.">
 							  <div class="slide-caption">
-							    <h6 class="caption">Instructions page.</h6>
+							    <h6 class="caption">Instructions on how to play.</h6>
 							  </div>
 							</div>
 
@@ -114,13 +154,9 @@
 							<button class="project-button project-button-margins" onclick="toggleSize('leapyfrog-slide')"><i class="fa fa-arrows fa-2x"></i></button>
 							<button class="project-button project-button-link project-button-margins"><h4 class="project-button-text"><a href="https://github.com/AndrewYinLi/leapy-frog"><i class="fa fa-github-square fa-2x"></i>&nbsp;Source Code</a></h4></button>
 							<button class="project-button project-button-link project-button-margins"><h4 class="project-button-text"><a href="https://play.google.com/store/apps/details?id=com.IndepenguinGames.LeapyFrog"><i class="fa fa-android fa-2x"></i>&nbsp;Google Play</a></h4></button>
-							<script src="assets/js/slideshow.js"></script>
 						</div>
 					</div>
-					<br /><div class="portfolio-project">
-						<h4>Website template</h4>
-						<br /><h5>Stuff</h5>
-					</div>
+					<script src="assets/js/slideshow.js"></script>
 				</div>
 			</div>
 		</div>
@@ -128,7 +164,7 @@
 			<div id="footer-top"></div>
 			<h3>Let's Connect!</h3><br />
 			<h5>
-				This website only featured a portion of my projects—check everything out on my <a href="https://github.com/AndrewYinLi"><span class="anchor">GitHub</span></a>! 
+				This website only featured a portion of my projects—check out all my projects via my <a href="https://github.com/AndrewYinLi"><span class="anchor">GitHub</span></a>! 
 				<br />
 				<div id="GitHub">
 					<img src="http://ghchart.rshah.org/000033/AndrewYinLi" width="70%" height="70%" alt="My GitHub contributions over the past year."/>
@@ -137,7 +173,6 @@
 				Additionally, feel free to reach out to me at <a href="mailto:ali@oberlin.edu"><span class="anchor">ali@oberlin.edu</span></a> or connect with me on <a href="https://www.linkedin.com/in/andrew-yin-li"><span class="anchor">LinkedIn</span></a>.
 			</h5>
 			<br /> 
-
 		</footer>
 	</body>
 	
