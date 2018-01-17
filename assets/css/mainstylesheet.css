@@ -13,6 +13,7 @@
 
 	a{
 		text-decoration: none;
+		color: #FFFFFF;
 	}
 
 	h1, h3{
@@ -68,6 +69,8 @@
 
 	i{
 		vertical-align: middle;
+		display: inline;
+		clear: left;
 	}
 
 	h5{
@@ -81,7 +84,9 @@
 	}
 
 	h6.caption{
-		margin: auto auto;
+		margin: 4px auto;
+		text-align: center;
+
 	}
 
 	.anchor{
@@ -320,11 +325,12 @@
 	.project-button{
 		background-color: #0098C3;
 		color: white;
-		padding: 8px 8px;
+		padding: 10px 10px;
 		border-radius: 8px;	
 		border: 0;
 		cursor: pointer;
 		margin: 0 0.25vw 0 0;
+		vertical-align: middle;
 	}
 
 	.project-button:hover{
@@ -332,7 +338,8 @@
 	}
 
 	.project-button-link{
-		/*padding: 8px 8px;*/
+		padding: 4px 10px;
+		float: right;
 	}
 
 	.project-button-margins{
@@ -341,6 +348,36 @@
 
 	.slide img{
 		border-radius: 2.5%;
+		margin: 0 auto;
+		display: block;
 	}
+
+	#footer-top {
+		width: 0;
+		height: 0;
+		border-top: 10vh solid #3366ff;
+		border-left: 100vw solid #6897BB;
+		overflow: hidden;
+	}
+
+	footer{
+		background-color: #6897BB;
+	}
+
+	#GitHub{
+		display: block;
+    	margin: 1vh auto 2vh;
+    	padding: 10px;
+	}
+
+	#GitHub img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	#GitHub h6{
+		text-align: center;
+	}
+
 
 	

@@ -2,9 +2,9 @@ var slideIndices = [1,1]; // 0 = oprestissimo, 1 = leapyfrog
 var slideClassNames = ["oprestissimo-slide", "leapyfrog-slide"];
 var slideSizes = [false,false];
 
-var i;
-for(i = 0; i < slideIndices.length; i++){
-	showSlide(slideIndices[i],slideClassNames[i]);
+var slideIndex;
+for(slideIndex = 0; slideIndex < slideIndices.length; slideIndex++){
+	showSlide(slideIndices[slideIndex],slideClassNames[slideIndex]);
 }
 
 function toggleSize(name){
@@ -13,15 +13,16 @@ function toggleSize(name){
 	var newSize;
 	if(slideSizes[indexKey]){
 		slideSizes[indexKey] = false;
-		newSize = '100%';
+		newSize = '60%';
 	}
 	else{
 		slideSizes[indexKey] = true;
-		newSize = '167%';
+		newSize = '100%';
 	}
+	var i;
 	for (i = 0; i < slideElements.length; i++) {
-		slideElements[i].style.height = newSize;
-		slideElements[i].style.width = newSize;
+		slideElements[i].getElementsByTagName('img')[0].style.height = newSize;
+		slideElements[i].getElementsByTagName('img')[0].style.width = newSize;
 	}
 }
 
@@ -41,16 +42,19 @@ function changeSlide(transition, name) {
 function showSlide(transition, name) {
 	var indexKey = getKey(name);
 	var slideElements = document.getElementsByClassName(name);
-	
 	if (transition > slideElements.length) {
 		slideIndices[indexKey] = 1;
 	}    
 	else if (transition < 1) {
 		slideIndices[indexKey] = slideElements.length;
 	}
-
+	var i;
 	for (i = 0; i < slideElements.length; i++) {
 		slideElements[i].style.display = "none";  
 	}
-	slideElements[slideIndices[indexKey]-1].style.display = "block";
+
+	try{ // Will throw an error if page isn't done loading!
+		slideElements[slideIndices[indexKey]-1].style.display = "block";
+	}
+	catch(error){}
 }
