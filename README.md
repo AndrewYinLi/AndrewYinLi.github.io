@@ -1,3 +1,10 @@
-This is the repository containing the code for my portfolio: www.andrewyinli.com
+# Here we work with JQUERY
+Jquery is a javascript library that makes writing javascript easier and faster. Here we will be doing simple DOM interaction, we will access buttons and make them scroll to certain divs in the page.
 
-If you like my website template, feel free to download it at: https://github.com/AndrewYinLi/rainier
+What you will learn
+* DOM interaction
+* little Jquery
+* ScrollTop
+* Animate
+* Selectors
+* Window href
